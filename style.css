@@ -21,13 +21,6 @@ body {
   padding: 90px 48px 128px 48px;
 }
 
-/* .top_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-} */
 #main_h1 {
   color: var(--Neon-Green, #53ffaa);
   text-align: center;
@@ -63,4 +56,17 @@ body {
   width: 196px;
   height: 1px;
   background: var(--Grayish-Blue, #4f5d74);
+  opacity: 0.3;
 }
+.main_button {
+  display: flex;
+  justify-content: center;
+}
+.main_button svg {
+  position: absolute;
+  margin-top: 42px;
+
+}
+
+
+/* TODO: ღილაკზე ჰოვერია დასამატებელი და რესპონსივი გასაკეთებელი */
