@@ -2,7 +2,7 @@ body {
   background: var(--Dark-Blue, #202733);
   display: flex;
   font-family: "Manrope", sans-serif;
-  padding: 223px 450px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +19,7 @@ body {
   text-align: center;
   flex-direction: column;
   padding: 90px 48px 128px 48px;
+  position: relative;
 }
 
 #main_h1 {
@@ -38,8 +39,7 @@ body {
   color: var(--Light-Cyan, #cee3e9);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-
-  /* Quote */
+  margin-bottom: -20px;
   font-family: Manrope;
   font-size: 28px;
   font-style: normal;
@@ -62,11 +62,37 @@ body {
   display: flex;
   justify-content: center;
 }
-.main_button svg {
+#main-svg {
   position: absolute;
-  margin-top: 42px;
-
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out 0s;
+  border-radius: 50%;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main-svg:hover {
+  box-shadow: rgb(83, 255, 170) 0px 0px 50px 0px;
 }
 
-
-/* TODO: ღილაკზე ჰოვერია დასამატებელი და რესპონსივი გასაკეთებელი */
+@media only screen and (max-width: 768px) {
+  .main_container {
+    width: 343px;
+    height: 315px;
+    border-radius: 10px;
+    padding: 79px 24px 104px 24px;
+  }
+  #main_h1 {
+    font-size: 11px;
+  }
+  #main_p {
+    font-size: 22px;
+  }
+  .visual hr {
+    width: 122px;
+  }
+  #main-svg {
+    margin-top: 11px;
+  }
+}
+/* TODO: რომ გასწორდეს და ერთ და გივე ადგილზე,რომ იყოს და ბათენმა ,რომ არ მიოძრაოს */
