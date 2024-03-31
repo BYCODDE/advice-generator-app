@@ -68,8 +68,6 @@ body {
   transition: box-shadow 0.3s ease-in-out 0s;
   border-radius: 50%;
   bottom: -32px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 #main-svg:hover {
   box-shadow: rgb(83, 255, 170) 0px 0px 50px 0px;
@@ -95,4 +93,3 @@ body {
     margin-top: 11px;
   }
 }
-/* TODO: რომ გასწორდეს და ერთ და გივე ადგილზე,რომ იყოს და ბათენმა ,რომ არ მიოძრაოს */
